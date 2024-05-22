@@ -78,6 +78,7 @@
       <data directive="@includeFirst" injection="true" prefix="&lt;?php&#10;echo $__env-&gt;first(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))-&gt;render(); ?&gt;" />
       <data directive="@includeUnless" injection="true" prefix="&lt;?php&#10;echo $__env-&gt;renderUnless(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path'])); ?&gt;" />
       <data directive="@includeWhen" injection="true" prefix="&lt;?php&#10;echo $__env-&gt;renderWhen(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path'])); ?&gt;" />
+      <data directive="@isRoute" injection="true" prefix="prefix" suffix="suffix" />
       <data directive="@isset" injection="true" prefix="&lt;?php&#10;if(isset(" suffix=")): ?&gt;" />
       <data directive="@js" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
       <data directive="@json" injection="true" prefix="&lt;?php&#10;echo json_encode(" suffix=") ?&gt;" />
@@ -105,6 +106,7 @@
       <data directive="@stack" injection="true" prefix="&lt;?php&#10;echo $__env-&gt;yieldPushContent(" suffix="); ?&gt;" />
       <data directive="@stop" />
       <data directive="@style" injection="true" prefix="class=&quot;&lt;?php echo \Illuminate\Support\Arr::toCssStyles(" suffix=")?&gt;&quot;" />
+      <data directive="@styledLink" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
       <data directive="@switch" injection="true" prefix="&lt;?php&#10;switch(" suffix="): ?&gt;" />
       <data directive="@unless" injection="true" prefix="&lt;?php&#10;if (! (" suffix=")): ?&gt;" />
       <data directive="@unset" injection="true" prefix="&lt;?php&#10;unset(" suffix="); ?&gt;" />
