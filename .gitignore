@@ -25,4 +25,5 @@ Homestead.json
 auth.json
 /.fleet
 /.idea
+.idea
 /.vscode
