@@ -142,14 +142,10 @@ F
 .env.example,d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871
 7
 artisan,7/b/7b71702630186bd4af512196be21d5bd978c3333
-O
-app/Actions/v1/Metrics/Save.php,2/c/2c118813c38c4cc7f615bb64c031f6bc8db1abaa
 \
 ,app/Http/Controllers/Api/v1/Metrics/Save.php,2/8/280d72bbde501f15c034bae19fa027cbcbb36e82
 V
 &app/Actions/v1/Metrics/SaveMetrics.php,a/b/abdde36ae59c7ad91dbc6ff5909a465da9201311
-u
-Eapp/Http/Controllers/MetricsViewsController/MetricsViewController.php,0/d/0d2b6d5c8ce90bba551691c5c78357c9e3d3f6a1
 ^
 .app/Http/Controllers/MetricsViewController.php,0/e/0ef50f06482720b50eebab64c146a098ba9fdf0d
 S

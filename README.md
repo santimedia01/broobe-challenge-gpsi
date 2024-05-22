@@ -1,7 +1,7 @@
 # Broobe Challenge - Google Page Speed Insights
 #### Uso: Dejé un video en la raiz del proyeceto, para que se pueda apreciar todo 
 ## Pasos de Instalación
-- Pre-configurar Node con NPM, MySQL y PHP 8.1
+- Pre-configurar Node con NPM, MySQL y PHP 8.1 con composer.
 - El proyecto ya viene con un .env
   - Configuramos el .env con las credenciales de la BD
   - Configuramos en el .env la variable GOOGLE_PAGESPEEDONLINE_API_KEY="", que por las dudas no la hago pública en github de manera directa con el .env, por mas que ustedes le den de baja después. Se encontraba en el PDF del challenge, esta en `./.requeriments/Challenge_-_Laravel_PHP`.
