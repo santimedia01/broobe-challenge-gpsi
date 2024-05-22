@@ -12,7 +12,7 @@
 
 <div class="font-semibold leading-6 text-indigo-200">Latest Benchmarks</div>
 <ul role="list" class="-mx-2 mt-2 space-y-1">
-    @if(count($lastMetricRuns)<=1)
+    @if(count($lastMetricRuns) <= 0)
         <span class="text-indigo-200 hover:text-white hover:bg-indigo-700 group flex gap-x-3 rounded-md p-2 text-xs leading-6 font-semibold">
             There is no benchmarks.
         </span>

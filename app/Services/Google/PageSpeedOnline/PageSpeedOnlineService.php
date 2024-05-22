@@ -29,6 +29,7 @@ class PageSpeedOnlineService implements PageSpeedServiceInterface
         try {
             $client = new Client([
                 'base_uri' => self::API_BASE_URL,
+                'verify' => false,
             ]);
 
             $response = $client->get("v5/runPagespeed", [
@@ -68,9 +69,10 @@ class PageSpeedOnlineService implements PageSpeedServiceInterface
         } catch (RequestException $e) {
             $errorMsg = '';
             $code = 1901;
-            $response = json_decode($e->getResponse()->getBody()->getContents(), true);
 
             if ($e->hasResponse()) {
+                $response = json_decode($e->getResponse()->getBody()->getContents(), true);
+
                 if (
                     array_key_exists('error', $response)
                     && array_key_exists('message', $response['error'])
@@ -79,7 +81,12 @@ class PageSpeedOnlineService implements PageSpeedServiceInterface
                     $code = 1910;
                     $errorMsg .= "Page URL not found on internet. Try using another webpage.";
                 } else {
-                    $errorMsg = "Failed to run Metrics. StatusCode<{$e->getResponse()->getStatusCode()}, {$e->getResponse()->getReasonPhrase()}>";
+                    $statusCode = $e->getResponse()->getStatusCode();
+                    if ($statusCode >=400 && $statusCode < 500) {
+                        $errorMsg = "Failed to run Metrics. Try again, or change the web page, it probably does not exists or returned an error.";
+                    } else {
+                        $errorMsg = "Failed to run Metrics. StatusCode<{$e->getResponse()->getStatusCode()}, {$e->getResponse()->getReasonPhrase()}>";
+                    }
                 }
             } else {
                 $errorMsg .= $e->getMessage();
