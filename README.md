@@ -7,7 +7,7 @@
     - En caso de no querer conectar una base de datos, realizar lo siguiente:
     - Seteamos DB_CONNECTION=sqlite
     - Creamos un archivo bd.sqlite en `.storage/bd.sqlite`
-    - Seteamos DB_DATABASE="Ruta absoluta al archivo bd.sqlite"
+    - Seteamos DB_DATABASE="Ruta absoluta al archivo bd.sqlite" (recordar si el SO es Windows, escapar las barras en el string)
   - Configuramos en el .env la variable GOOGLE_PAGESPEEDONLINE_API_KEY="", que por las dudas no la hago pública en github de manera directa con el .env, por mas que ustedes le den de baja después. Se encontraba en el PDF del challenge, esta en `./.requeriments/Challenge_-_Laravel_PHP`.
 
 - Ejecutamos los siguientes comandos:
