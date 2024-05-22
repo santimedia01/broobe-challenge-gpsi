@@ -7,6 +7,8 @@
   - Configuramos en el .env la variable GOOGLE_PAGESPEEDONLINE_API_KEY="", que por las dudas no la hago pública en github, por mas que ustedes le den de baja después
 
 - Ejecutamos los siguientes comandos:
+  - `git clone https://github.com/santimedia01/broobe-challenge-gpsi` 
+  - `cd broobe-challenge-gpsi`
   - `npm i`
   - `composer install`
   - `php artisan migrate --seed`
