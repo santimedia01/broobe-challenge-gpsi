@@ -40,13 +40,13 @@
 
 ### Aclaraciones varias
 #### Proyecto
-- Una de las primeras cosas que me puse a analizar era la cuestión del tiempo que tardaba el endpoint de la api de google. Al final tardo en promedio 30-50 segundos, pero ya estaba analizando la posibilidad de hacer la infraestructura de espera con laravel queues y jobs. Esto mas que nada porque las primeras URL que habia probado algunas tardaron como 2 minutos y ya me estaba preocupando por como abarcar mejor el UX y tmb la solución. Tampoco quería hacer una sobreingeniería sin sentido para esto.
+- Una de las primeras cosas que me puse a analizar era la cuestión del tiempo que tardaba el endpoint de la api de google. Al final tardo en promedio 30-50 segundos, pero ya estaba analizando la posibilidad de hacer la infraestructura de espera con Laravel Queues y Jobs. Esto más que nada porque las primeras URL que había probado algunas tardaron como 2 minutos y ya me estaba preocupando por como abarcar mejor el UX y tmb la solución. Tampoco quería hacer una sobre ingeniería sin sentido para esto.
 - Sé que el challenge solicita crear tablas como las Categorías y Estrategias, pero en vez de esto, yo realizaría simplemente un Enum para ahorrar tiempo de ejecución, consultas a la BD innecesarias, etc. Supongo que esto es así por simple finalidad del challenge para obligarnos a realizar tablas y relacionarlas.
 - Me habré ido del scope del Challenge seguro también, pero me gusta demostrar ideas.
 - Suelo utilizar el "Patrón" Actions en Laravel, para almacenar allí los casos de uso y tener mejor organización. Claramente por tiempos y rapidez no lo realicé de manera estricta.
 #### Tiempos
 - Hay muchas cuestiones que se podrían mejorar/optimizar en la resolución de mi challenge, pero por cuestión de tiempos algunas decidí no realizarlas. No es que no sea capaz de ellas.
-- Algunas, son mejorar la reusabilidad y separación en componentes del Blade. Siento muy importante este aspecto. Espero que no se note que vengo de la comodidad diaria de React je.
+- Algunas, son mejorar la reusabilidad y separación en componentes del Blade. Siento muy importante este aspecto. Espero que no se note que vengo de la comodidad diaria de React.
 - También hubiese estado bueno que me de el tiempo para hacer Feature Tests.
 - Y haberle agregado también la screenshot que saca Lighthouse, que se recibe en la api como base64.
 - Y mejorado varios puntos de las interfaces, supongo que se irá notando a medida que me quedaba sin tiempo, la reducción de calidad de las mismas.
